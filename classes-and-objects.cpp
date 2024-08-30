@@ -128,20 +128,11 @@ int main() {
             break;
         }
         }
-
-        do {
-            cout << "\n  Back to Menu? [Y/N]: ";
-            cin >> backToMenu;
-            cin.ignore();
-            backToMenu = toupper(backToMenu);
-            if (backToMenu != 'Y' && backToMenu != 'N') {
-                cout << "\n  Enter either 'Y' or 'N'\n";
-            }
-        } while (backToMenu != 'Y' && backToMenu != 'N');
-
+		cout<<endl;
+        system("PAUSE");
         system("CLS");
 
-    } while (backToMenu == 'Y');
+    } while (choice != 4);
 
     return 0;
 }
